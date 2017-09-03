@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.xiaodangjia.ContentActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/content_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"></LinearLayout>
+
+            <TextView
+                android:padding="10dp"
+                android:textSize="26dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="14sp"
+                    android:id="@+id/tag_tv"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="src" />
+
+                <TextView
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="14sp"
+                    android:paddingRight="22dp"
+                    android:id="@+id/cookingtime_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="shijian" />
+                <Button
+                    android:layout_margin="10dp"
+                    android:text="  用料  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:scrollbars="vertical"
+                        android:id="@+id/maerial_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                <Button
+                    android:layout_margin="10dp"
+                    android:text="  做法  "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.RecyclerView
+                        android:scrollbars="vertical"
+                        android:id="@+id/process_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:padding="20dp"
+                    android:textSize="16sp"
+                    android:text="content"
+                    android:id="@+id/content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
